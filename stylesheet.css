@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#6400e4;
+    --box-shadow : 0px 3px 5px 0px rgba(0,0,0,0.34);
+    --hover-shadow: 0px 4px 4px 0px rgba(3,3,3,0.561);
+    --nav-shadow: 0px 0px 10px 0px rgba(0,0,0,0.100);
+    --light-black:#141c34;
+}
+
+body{
+    font-family: "nunito",sans-serif;
+}
+
+.container{
+    width:28%;
+    margin:100px auto;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    margin:30px 0;
+}
+
+form label{
+    margin:5px 0;
+}
+
+form input[type="email"],input[type="password"]{
+    height:55px;
+    margin: 5px 0;
+    border:0.5px solid grey;
+    border-radius: 5px;
+    padding:0 15px;
+    font-size:20px;
+    font-family: "Nunito",sans-serif;
+}
+
+form a{
+    margin:10px 0;
+    text-decoration: none;
+    color:var(--main-color);
+    font-weight: bold;
+}
+
+form a:hover{
+    color:purple;
+}
+
+form input[type="submit"]{
+    height:50px;
+    background:var(--main-color);
+    font-weight:bold;
+    font-size:large;
+    font-family:"nunito",sans-serif;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    box-shadow:var(--box-shadow);
+    cursor:pointer;
+}
+
+form input[type="submit"]:hover{
+    box-shadow:var(--hover-shadow);
+    color:var(--hover-shadow);
+}
+
+.footer h3{
+    font-size:16px;
+    opacity: 0.9;
+}
+
+.footer .images{
+    display:flex;
+    height:50px;
+    justify-content: space-around;
+    margin-top: 15px;
+
+}
+
+.footer .images img{
+    width:13%;
+    border:2px solid lightgray;
+    border-radius:3px;
+    padding:10px;
+}
+
+.footer .images img:hover{
+    box-shadow: var(--hover-shadow);
+    cursor: pointer;
+}
+
+.footer a{
+    float:right;
+    color:var(--main-color);
+    margin: 10px;
+}
